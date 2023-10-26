@@ -15,7 +15,7 @@ body {
 	flex-direction: column;
 	width: 60%;
 	min-height: 100px;
-	background-color: orange;
+
 	margin: auto;
 }
 
@@ -26,7 +26,7 @@ body {
 	height: 50px;
 	align-items: center;
 	padding-left: 2%;
-	background-color: burlywood;
+	background-color: lightgrey;
 }
 
 #logo {
@@ -41,7 +41,7 @@ body {
 	height: 30px;
 
 	padding-left: 2%;
-	background-color: lightblue;
+	background-color: lightgrey;
 	margin-top: 10px;
 	justify-content: center;
 	align-items: center;
@@ -56,4 +56,53 @@ body {
 	justify-content: center;
 	margin-top: 10px;
 	align-items: center;
+}
+#main-div {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-height: 400px;
+
+	margin-top: 10px;
+	justify-content: space-between;
+}
+#sidebar-div {
+	display: flex;
+	flex-direction: row;
+	flex-basis: 20%;
+	min-height: 400px;
+	background-color: lightgrey;
+	margin-top: 10px;
+	align-items: center;
+	justify-content: center;
+}
+#content-div {
+	display: flex;
+	flex-basis: 75%;
+	flex-direction: column;
+	background-color: lightgrey;
+	margin-top: 10px;
+	align-items: center;
+	justify-content: center;
+}
+#footer-div {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-height: 50px;
+	background-color: lightgrey;
+	margin-top: 10px;
+	align-items: center;
+	justify-content: center;
+}
+table {
+	border-collapse: collapse;
+}
+td {
+	padding: 10px;
+	border: 1px solid black;
+}
+p {
+	padding: 10px;
+	color: crimson;
 }

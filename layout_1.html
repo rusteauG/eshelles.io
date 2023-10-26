@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Layout#1</title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+				box-sizing: border-box;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			#logo-div::before {
+				content: "\0207";
+				font-size: xx-large;
+				color: teal;
+			}
+			#logo-div {
+				min-width: none;
+				height: 50px;
+				width: 100%;
+				line-height: 50px;
+				font-weight: bold;
+				color: cadetblue;
+				background-color: lightgrey;
+				padding-left: 2%;
+				border-left: 20px solid black;
+				border-right: 20px solid black;
+			}
+			#nav-div {
+				margin-top: 10px;
+				width: 100%;
+				min-height: 30px;
+				line-height: 30px;
+				background-color: lightgrey;
+				padding-left: 2%;
+				text-align: center;
+			}
+			#header-div {
+				margin-top: 10px;
+				width: 100%;
+				min-height: 100px;
+				line-height: 100px;
+				background-color: lightgrey;
+				padding-left: 2%;
+				text-align: center;
+			}
+
+			#main-div {
+				margin-top: 10px;
+				width: 100%;
+				min-height: 300px;
+				line-height: 300px;
+				und-color:
+
+				text-align: center;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			#sidebar-div {
+				width: 30%;
+
+				background-color: lightgrey;
+
+				text-align: center;
+			}
+			#content-div {
+				width: 65%;
+
+				background-color: lightgrey;
+				padding-left: 2%;
+				text-align: center;
+			}
+			#footer-div {
+				margin-top: 10px;
+				width: 100%;
+				min-height: 50px;
+				line-height: 50px;
+				background-color: lightgrey;
+				padding-left: 2%;
+				text-align: center;
+			}
+			#wrapper-div {
+				margin: 0 20% 0 20%;
+				background-color: aliceblue;
+			}
+			body{
+				background-color: azure
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper-div">
+			<div id="logo-div">shelles</div>
+			<div id="nav-div">Navigation</div>
+			<div id="header-div">
+				<h1>Header/Banner</h1>
+			</div>
+			<div id="main-div">
+				<div id="sidebar-div">Sidebar</div>
+				<div id="content-div">Content</div>
+			</div>
+			<div id="footer-div">Footer</div>
+		</div>
+	</body>
+</html>
