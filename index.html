@@ -5,6 +5,37 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Eshelles🌊</title>
 		<link rel="stylesheet" href="style.css" />
+		<style>
+			.text-effect {
+				font-size: 3rem;
+				color: #fff;
+				font-family: "Arial", sans-serif;
+				position: relative;
+				text-transform: uppercase;
+				overflow: hidden;
+			}
+
+			.text-effect::before {
+				content: "Neville Rusteau";
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow: hidden;
+				color: #00f4;
+				clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+				animation: reveal 4s linear forwards infinite; /* Set a longer animation duration and make it loop infinitely */
+				animation-delay: 2s; /* Add a delay before the animation restarts */
+			}
+
+			@keyframes reveal {
+				0% {
+					transform: translateX(-100%);
+				}
+				100% {
+					transform: translateX(0);
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<div id="wrapper-div">
@@ -53,7 +84,9 @@
 					</script>
 				</div>
 			</div>
-			<div id="footer-div">Footer</div>
+			<div id="footer-div">
+				<div class="text-effect">Neville Rusteau</div>
+			</div>
 		</div>
 	</body>
 </html>
