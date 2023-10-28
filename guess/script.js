@@ -4,6 +4,7 @@ let score = 20;
 let message = '';
 let highscore = 0;
 let gameOver = false; // Add a flag to track if the game is over
+let secretNumber = Math.trunc(Math.random() * 20) + 1; // Generate the initial secret number
 
 const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
@@ -33,7 +34,7 @@ document.querySelector('.again').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 20) + 1;
 });
 
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
+secretNumber = Math.trunc(Math.random() * 20) + 1;
 document.querySelector('.check').addEventListener('click', function () {
   if (gameOver) {
     // If the game is over, don't process further guesses
@@ -58,6 +59,7 @@ document.querySelector('.check').addEventListener('click', function () {
     element.style.borderRadius = '10px';
     element.style.padding = '10px';
     element.style.border = '2px solid orange';
+    secretNumber = Math.trunc(Math.random() * 20) + 1;
 
     if (score > highscore) {
       highscore = score;
